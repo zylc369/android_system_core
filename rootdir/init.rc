@@ -275,6 +275,10 @@ on post-fs-data
     # give system access to wpa_supplicant.conf for backup and restore
     chmod 0660 /data/misc/wifi/wpa_supplicant.conf
     mkdir /data/local 0751 root root
+    mkdir /data/local/bw 0777 system system
+    mkdir /data/local/bw/log 0777 system system
+    mkdir /data/local/bw/db 0777 system system
+    mkdir /data/local/bw/socket 0777 system system
     mkdir /data/misc/media 0700 media media
 
     # For security reasons, /data/local/tmp should always be empty.
